@@ -25,7 +25,7 @@ export default function TreeChart() {
 
 
   // drawing a tree chart
-  const drawChart = () => {
+  const drawTreeChart = () => {
     var treeData = {
       name: "Sentence",
       children: data
@@ -52,7 +52,6 @@ export default function TreeChart() {
     });
     root.x0 = height / 2;
     root.y0 = 0;
-    console.log("root ", root);
     
     update(root);
     
@@ -184,7 +183,7 @@ export default function TreeChart() {
 
   useEffect(()=>{
         if (data.length > 0) {
-            drawChart();
+            drawTreeChart();
         } else {
           getsentences()        
         }

@@ -106,7 +106,8 @@ export default function TimeSeriesChart( props) {
     } else {
       getYoungPeopleData()
     }
-  },[data])
+    
+  },[data]);
 
 
   return (
